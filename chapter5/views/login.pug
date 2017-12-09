@@ -1,0 +1,25 @@
+
+html
+	head
+		title Login Form
+
+	body
+		h2 #{message}
+		form(action = "login",method="POST")
+			div
+				label(for = "username") Username:
+				input(type = "text", name = "username", placeholder = "username", required)
+			br
+
+			div
+				label(for = "password") Password:
+				input(type = "password", name = "password", placeholder = "password", required)
+			br
+
+			button(type = "submit") Submit
+		div
+			h2 Not a member?
+				a(href = 'register') Sign up now!
+
+
+

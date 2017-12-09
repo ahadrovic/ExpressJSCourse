@@ -1,0 +1,26 @@
+extends layout
+
+block content
+ h1= title
+ p Welcome to #{title}
+ ul
+ -
+  function test(a,b) {
+  	return a + b;
+  }
+  var c = 55;
+  var res = 0;
+  for (var i = 0 ; i < 10 ; i++)
+   res += i
+  var trainers = [{"name": "Ash","email":"ash@gmail.com"},{"name":"Brock","email":"brock@gmail.com"},{"name":"Misty","email":"misty@gmail.com"}];
+ ul
+  each trainer in trainers
+   li= trainer
+script(src = "../scripts/script.js")
+
+
+
+
+  
+
+

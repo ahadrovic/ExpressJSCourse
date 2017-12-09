@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= message
+  
+  h2 Add User
+  form(action="users/create", method="POST")
+   input(type = "number", step="1", name = "id",placeholder = "id")
+   br
+   input(type = "text", name = "username",placeholder = "username")
+   br
+   input(type = "email", name = "email",placeholder = "email")
+   br
+   button Submit
+
+  h2 Update User
+  form(action="update", method="POST")
+   input(type = "number", step="1", name = "id",placeholder = "id")
+   br
+   input(type = "text", name = "username",placeholder = "username")
+   br
+   input(type = "email", name = "email",placeholder = "email")
+   br
+   button Submit
+
+  h2 Delete User
+   form(action="delete", method="POST")
+    input(type = "number", step="1", name = "id",placeholder = "id")
+    button Submit
+

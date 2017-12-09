@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= message
+  h2= newData
+  br
+  h2 Search for Place
+  form(action="search",method="GET")
+   input(type="text",name="search",placeholder="search for a place")
+   button Submit
+  br
+  h2 Add Place
+  form(action="addPlace", method="POST")
+   input(type = "number", step = "1", name = "id", placeholder = "id")
+   br
+   input(type = "text", name = "name",placeholder = "place name")
+   br
+   input(type = "text", name = "address",placeholder = "place address")
+   br
+   input(type = "text", name = "type",placeholder = "place type")
+   br
+   button Submit

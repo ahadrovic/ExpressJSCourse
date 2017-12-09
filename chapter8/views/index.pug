@@ -1,0 +1,12 @@
+extends layout
+
+block content
+ h1= "Welcome!"
+ h2= message
+ div
+  form(action = "users/login",method="POST")
+   input(type = "text", name = "username", required)
+   input(type = "password",name="password", required)
+   button Submit
+  p Not a member?
+   a(href="users/register") Sign up now!

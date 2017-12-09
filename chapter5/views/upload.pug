@@ -1,0 +1,44 @@
+
+html
+	head
+		title Login Form
+
+	body
+		h1 #{message}
+		form(action = "single", enctype="multipart/form-data", method="POST")
+			div
+				label(for = "avatar") Profile picture:
+				input(type = "file", name = "avatar",  accept = '.png,.gif,.jpeg,.bmap')
+			br
+
+			button(type = "submit") Submit
+
+		form(action = "multiple", enctype="multipart/form-data", method="POST")
+			div
+				label(for = "photos") Photos:
+				input(type = "file", name = "photos",  accept = '.png,.gif,.jpeg,.bmap')
+				input(type = "file", name = "photos",  accept = '.png,.gif,.jpeg,.bmap')
+
+			br
+
+			button(type = "submit") Submit
+
+		form(action = "all", enctype="multipart/form-data", method="POST")
+			div
+				label(for = "avatar") Profile picture:
+				input(type = "file", name = "avatar",  accept = '.png,.gif,.jpeg,.bmap')
+			br
+
+			div
+				label(for = "photos") Photos:
+				input(type = "file", name = "photos",  accept = '.png,.gif,.jpeg,.bmap')
+				input(type = "file", name = "photos",  accept = '.png,.gif,.jpeg,.bmap')
+
+			br
+
+			button(type = "submit") Submit
+
+
+
+
+

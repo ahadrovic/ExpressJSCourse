@@ -1,0 +1,11 @@
+html
+	head
+		title #{user.username}'s Homepage
+
+	body
+		h1 Hello, #{user.firstname} #{user.lastname}
+		br
+		h2 Your email : #{user.email}
+		br
+		form(action='logout',method="POST")
+			button Log out

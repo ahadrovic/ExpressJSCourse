@@ -1,0 +1,13 @@
+html
+	head
+		title Comments Section
+		
+		body
+			h1 Comments
+			div
+				each comment in comments
+					article.Comment
+						.Comment-user= comment.user
+						.Comment-date= comment.date
+						.Comment-text= comment.text
+					br

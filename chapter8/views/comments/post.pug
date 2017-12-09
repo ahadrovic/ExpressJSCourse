@@ -1,0 +1,10 @@
+html
+	head
+		title Write a Comment
+		
+		body
+			h3 Logged in as: #{user.username}
+			h1 Write a Comment
+			form(action='post' method = "POST")
+				textarea(name = "text" placeholder = "write comment")
+				button Submit

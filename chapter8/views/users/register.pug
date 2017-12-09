@@ -1,0 +1,35 @@
+
+html
+	head
+		title Register
+
+	body
+		h2 #{message}
+		form(action = "register",method="POST")
+			div
+				label(for = "username") Username:
+				input(type = "text", name = "username", placeholder = "username" required)
+			br
+
+			div
+				label(for = "password") Password:
+				input(type = "password", name = "password", placeholder = "password" required)
+			br
+
+			div
+				label(for = "password") Confirm Password:
+				input(type = "password", name = "passwordconf", placeholder = "conf password" required)
+			br
+
+			div
+				label(for = "email") Email:
+				input(type = "email", name = "email", placeholder = "email" required)
+			br
+
+			button(type = "submit") Submit
+		div
+			h2 Not a member?
+				a(href = 'register') Sign up now!
+
+
+

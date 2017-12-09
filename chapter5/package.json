@@ -1,0 +1,23 @@
+{
+  "name": "chapter5",
+  "version": "1.0.0",
+  "description": "test app for learning webapps",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"hello\")"
+  },
+  "author": "ademh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrpyt": "^2.0.0",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongoose": "^4.10.4",
+    "multer": "^1.3.0",
+    "pug": "^2.0.0-rc.1"
+  }
+}
